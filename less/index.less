@@ -1,12 +1,28 @@
 
 @import 'variables';
+@import 'mixins';
+@import 'resets';
 
 
 
+body{
+    background:@lightGreen;
+}
+
+h2{
+    font-size:30px;
+}
+
+.container{
+    margin:0 auto;
+    width:90%;
+    background:white;
+    line-height:2em;
+    padding-bottom:150px;
+
+}
 
 
 
-
-
-
+@import '../navigation/navigation';
 @import './landing.less';

@@ -1,55 +1,296 @@
+.btn {
+  background: #ff9900;
+  font-size: 18px;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background: #89B774;
+}
+h2 {
+  font-size: 30px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  background: white;
+  line-height: 2em;
+  padding-bottom: 150px;
+}
+.top-left {
+  width: 70%;
+  padding-top: 50px;
+}
+.top-left header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-left header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.top-left header nav a {
+  text-decoration: none;
+  color: #ADADAD;
+  justify-content: space-around;
+}
+.top-left header #logo {
+  height: 50px;
+  width: 50px;
+}
 .top-section {
   display: flex;
   font-family: sans-serif;
 }
 .top-section .top-left {
-  width: 70%;
-}
-.top-section .top-left header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.top-section .top-left header nav {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-.top-section .top-left header nav a {
-  text-decoration: none;
-  color: #ADADAD;
-  justify-content: space-around;
-}
-.top-section .top-left header #logo {
-  height: 50px;
-  width: 50px;
+  padding-top: 50px;
 }
 .top-section .top-left section {
-  border: 1px solid black;
   width: 80%;
   margin: 0 auto;
+  margin-top: 80px;
 }
 .top-section .top-left section h1 {
   font-size: 40px;
   color: #808080;
+  line-height: 1.5;
 }
-.top-section .top-left section p {
+.top-section .top-left section .sub-text {
   color: #ADADAD;
-  font-size: 20px;
+  margin: 15px 0 0 100px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  width: 70%;
 }
-.top-section .top-left section button {
+.top-section .top-left section .join {
+  text-align: center;
+}
+.top-section .top-left section .join button {
   background: #ff9900;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
-  padding: 10px 50px;
+  padding: 15px 50px;
   border-radius: 5px;
   border: none;
-  text-align: right;
+  margin-top: 50px;
+  margin-left: 120px;
 }
 .top-section .top-right {
   width: 40%;
 }
-.top-right img {
+.top-section .top-right img {
   position: static;
   max-width: 100%;
+}
+.mid-section .mid-top {
+  line-height: 1.2em;
+  text-align: center;
+  width: 50%;
+  margin: 120px auto;
+}
+.mid-section .mid-top h2 {
+  color: #89B774;
+  font-size: 30px;
+}
+.mid-section .mid-top p {
+  font-size: 22px;
+  color: #707070;
+  margin-top: 30px;
+  line-height: 1.5em;
+}
+.mid-section .mid-bottom .card-container {
+  display: flex;
+  justify-content: center;
+  color: #707070;
+}
+.mid-section .mid-bottom .card-container .card {
+  width: 23%;
+  box-shadow: 2px 2px 2px silver;
+  padding: 30px;
+  border-radius: 10px;
+}
+.mid-section .mid-bottom .card-container .card img {
+  width: 100px;
+}
+.mid-section .mid-bottom .card-container .card h3 {
+  font-size: 21px;
+  margin: 30px;
+}
+.mid-section .mid-bottom .card-container .card p {
+  font-size: 18px;
+}
+.mid-section .mid-bottom .card-container .mid-card {
+  margin: 0 20px;
+  background: #89B774;
+  color: white;
+}
+.mid-down {
+  margin-top: 150px;
+}
+.mid-down .mid-down-top {
+  width: 50%;
+  margin: 0 auto;
+}
+.mid-down .mid-down-top h2 {
+  text-align: center;
+}
+.mid-down .mid-down-top p {
+  margin: 35px 0;
+  font-size: 20px;
+}
+.mid-down .stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mid-down .stats-container .stats {
+  color: #ff9900;
+  font-size: 30px;
+  line-height: 2em;
+  width: 25%;
+  padding: 20px;
+}
+.mid-down .stats-container .stats button {
+  background: #ff9900;
+  font-size: 18px;
+  color: white;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 50px;
+  margin-left: 120px;
 }
