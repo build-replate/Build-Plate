@@ -1,0 +1,55 @@
+.top-section {
+  display: flex;
+  font-family: sans-serif;
+}
+.top-section .top-left {
+  width: 70%;
+}
+.top-section .top-left header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-section .top-left header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.top-section .top-left header nav a {
+  text-decoration: none;
+  color: #ADADAD;
+  justify-content: space-around;
+}
+.top-section .top-left header #logo {
+  height: 50px;
+  width: 50px;
+}
+.top-section .top-left section {
+  border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+.top-section .top-left section h1 {
+  font-size: 40px;
+  color: #808080;
+}
+.top-section .top-left section p {
+  color: #ADADAD;
+  font-size: 20px;
+}
+.top-section .top-left section button {
+  background: #ff9900;
+  font-size: 16px;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+}
+.top-section .top-right {
+  width: 40%;
+}
+.top-right img {
+  position: static;
+  max-width: 100%;
+}
