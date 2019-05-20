@@ -148,6 +148,7 @@ h2 {
   background: white;
   line-height: 2em;
   padding-bottom: 150px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 .top-left {
   width: 70%;
@@ -293,4 +294,76 @@ h2 {
   border: none;
   margin-top: 50px;
   margin-left: 120px;
+}
+.better {
+  background: #89B774;
+  width: 75%;
+  color: white;
+  border-radius: 10px;
+  margin: 100px auto;
+  padding: 70px 100px;
+}
+.better .better-top {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.better .better-top h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.better .better-top p {
+  font-size: 20px;
+  margin: 150px 0;
+}
+.better .better-bottom {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin: 0px auto;
+  align-items: baseline;
+}
+.better .better-bottom .bbp {
+  font-size: 20px;
+  width: 50%;
+}
+.better .better-bottom .bbp .farmshare {
+  font-weight: bold;
+  font-size: 25px;
+}
+.feedback-container h2 {
+  width: 300px;
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+.feedback-container .feed-holder {
+  display: flex;
+}
+.feedback-container .feed-holder .feed-card {
+  width: 350px;
+  padding: 45px;
+  border-radius: 15px;
+  border: 1px solid silver;
+}
+.feedback-container .feed-holder .feed-card .feed-top {
+  display: flex;
+  margin-bottom: 20px;
+}
+.feedback-container .feed-holder .feed-card .feed-top img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.feedback-container .feed-holder .feed-card .feed-top .credentials {
+  margin-left: 20px;
+}
+.feedback-container .feed-holder .feed-card .feed-top .credentials h4 {
+  color: #89B774;
+  font-weight: bold;
+}
+.feedback-container .feed-holder .feed-card .feed-top .credentials p {
+  font-size: 22px;
+}
+.feedback-container .feed-holder .feed-card .feed-quote p {
+  font-size: 20px;
 }
