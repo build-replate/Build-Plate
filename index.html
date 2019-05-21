@@ -10,18 +10,22 @@
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
   <body>
     <div class="container">
       <section class="top-section">
         <div class="top-left">
-          <header>
+          <header class="dropdown">
             <img id="logo" src="assets/logo.png" alt="" />
             <nav>
               <a href="">Home</a>
-              <a href="">The Problem with Food</a>
-              <a href="">We Hace a Better Way</a>
-              <a href="">About Us</a>
+              <a href="about.html">About Us</a>
             </nav>
           </header>
           <section>
@@ -55,36 +59,31 @@
         <div class="mid-bottom">
           <div class="card-container">
             <div class="card">
-              <img id="logo" src="assets/logo.png" alt="" />
+                   <span> <i class="fas fa-utensils"></i></span> 
               <h3>Do You Have Extra Food?</h3>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Officiis alias nemo magni quisquam! Explicabo laudantium quod
-                neque temporibus quae eligendi praesentium quaerat, omnis
-                laborum vero, dignissimos excepturi, reprehenderit aspernatur
-                accusamus.
+                neque 
               </p>
             </div>
             <div class="card mid-card">
-              <img id="logo" src="assets/logo.png" alt="" />
+                    <span> <i class="fas fa-truck"></i></span> 
               <h3>Can You CatchAndDeliver?</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis alias nemo magni quisquam! Explicabo laudantium quod
-                neque temporibus quae eligendi praesentium quaerat, omnis
-                laborum vero, dignissimos excepturi, reprehenderit aspernatur
-                accusamus.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officiis alias nemo magni quisquam! Explicabo laudantium quod
+                    neque 
+                
               </p>
             </div>
             <div class="card">
-              <img id="logo" src="assets/logo.png" alt="" />
+                <span> <i class="fas fa-heart"></i></span> 
               <h3>Social Impact<br />Investment</h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Officiis alias nemo magni quisquam! Explicabo laudantium quod
-                neque temporibus quae eligendi praesentium quaerat, omnis
-                laborum vero, dignissimos excepturi, reprehenderit aspernatur
-                accusamus.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officiis alias nemo magni quisquam! Explicabo laudantium quod
+                    neque 
               </p>
             </div>
           </div>
@@ -102,12 +101,14 @@
         </div>
 
         <div class="stats-container">
-          <p class="stats">
+          <p class="stats stat1">
             40% <BR /> of Food <br />
             is thrown Away
           </p>
-          <img src="assets/HomePageTheProblemSectionSadBoy.jpg" alt="" />
-          <div class="stats">
+          <div class="stats stats2">
+                <img src="assets/HomePageTheProblemSectionSadBoy.jpg" alt="" />
+          </div>
+          <div class="stats stats3">
             <p>
               1 in 7<br />
               People are Food Insecure
@@ -141,23 +142,10 @@
       </section>
 
       <section class="feedback-container">
-        <h2>What People Are Saying About CatchAndDeliver</h2>
+        <h2>What People Are Saying About
+                <span class="secondary-color">Catch</span><span class="tertiary-color">And</span><span class="primary-color">Deliver</span>
+        </h2>
         <div class="feed-holder">
-          <div class="feed-card">
-            <div class="feed-top">
-              <img src="assets/trucane.jpeg" alt="" />
-              <div class="credentials">
-                <h4>T=Name</h4>
-                <p>Production Engineer</p>
-              </div>
-            </div>
-            <div class="feed-quote">
-              <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-                ipsum dolor sit amet consectetur
-              </p>
-            </div>
-          </div>
 
           <div class="feed-card">
             <div class="feed-top">
@@ -169,29 +157,87 @@
             </div>
             <div class="feed-quote">
               <p>
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
                 ipsum dolor sit amet consectetur
               </p>
             </div>
           </div>
 
+
           <div class="feed-card">
             <div class="feed-top">
-                    <img src="assets/trucane.jpeg" alt="">
-                    <div class="credentials">
-                        <h4>T=Name</h4>
-                        <p>Production Engineer</p>
-                    </div>
+              <img src="assets/trucane.jpeg" alt="" />
+              <div class="credentials">
+                <h4>T=Name</h4>
+                <p>Production Engineer</p>
+              </div>
             </div>
             <div class="feed-quote">
-                <p>
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit amet consectetur
-                </p>
+              <p>
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur
+              </p>
             </div>
-        </div>
+          </div>
         </div>
       </section>
+
+
+      <section class="invest">
+          <div class="cont">
+
+              <h2>The Future of <span class="primary-color">Volunteering</span> is <span class="secondary-color">Catch</span><span class="tertiary-color">And</span><span class="primary-color">Deliver</span></h2>
+              <button>Invest Now</button>
+          </div>
+      </section>
+
+      <footer>
+        <div class="nav-container">
+          <div class="nav-col">
+            <h4>Company</h4>
+            <nav>
+              <a href="">About Us</a>
+              <a href="">Team</a>
+              <a href="">Careers</a>
+              <a href="">Contact</a>
+            </nav>
+          </div>
+
+          <div class="nav-col">
+            <h4>Invest</h4>
+            <nav>
+              <a href="">Features</a>
+              <a href="">How It Works</a>
+              <a href="">Pricing</a>
+              <a href="">Sign In</a>
+            </nav>
+          </div>
+
+          <div class="nav-col">
+            <h4>Contact</h4>
+            <nav>
+              <a href="">Privacy</a>
+              <a href="">Terms</a>
+              <a href="">Security</a>
+            </nav>
+          </div>
+
+          <div class="contact">
+              <div class="cont">
+                    <p>Write to us<br> info.@zoufarm.com</p>
+                    <button><i class="fas fa-user-alt"></i> Sign In</button>
+              </div>
+          </div>
+        </div>
+
+        <div class="copy">
+            <img src="assets/logo.png" alt="">
+            <p>&copy CopyRight 2018 <span class="secondary-color">Catch</span><span class="tertiary-color">And</span><span class="primary-color">Deliver</span></p>
+        </div>
+      </footer>
     </div>
+
   </body>
+
+  <script src="navigation/navigation.js"> </script>
 </html>

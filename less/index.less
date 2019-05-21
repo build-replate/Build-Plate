@@ -7,23 +7,26 @@
 
 body{
     background:@lightGreen;
+    a{
+        text-decoration: none;
+    }
+    h2{
+        font-size:30px;
+    }
+    .container{
+        background:white;
+        margin:0 auto;
+        width:90%;
+        line-height:2em;
+        padding-bottom:50px;
+        font-family: 'Roboto Condensed', sans-serif;
+    
+    }
 }
 
-h2{
-    font-size:30px;
-}
-
-.container{
-    margin:0 auto;
-    width:90%;
-    background:white;
-    line-height:2em;
-    padding-bottom:150px;
-    font-family: 'Roboto Condensed', sans-serif;
-
-}
 
 
 
-@import '../navigation/navigation';
+@import '../navigation/navigation.less';
+@import './about.less';
 @import './landing.less';

@@ -1,10 +1,47 @@
-.btn{
+.average-bottom-space{
+    margin-bottom:150px;
+}
+
+
+.text-color(@color){
+    color:@color;
+}
+
+.btn(@background, @color){
+    background:@background;
+    font-size:18px;
+    color:@color;
+    padding:15px 50px;
+    border-radius:5px;
+    border:none;
+}
+
+.btn-orange{
     background:@deepGreen;
     font-size:18px;
     color:white;
     padding:15px 50px;
     border-radius:5px;
     border:none;
-    margin-top:50px;
-    margin-left:120px;
+   
+}
+
+.btn-white{
+    background:white;
+    font-size:18px;
+    color:@lightGreen;
+    padding:15px 50px;
+    border-radius:5px;
+    border:none;
+}
+
+.primary-color{
+    .text-color(@lightGreen)
+}
+.secondary-color{
+    .text-color(@deepGreen)
+}
+
+.tertiary-color{
+    .text-color(@green)
 }
