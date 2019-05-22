@@ -8,7 +8,7 @@
       margin: 0 auto;
       margin-bottom: 70px;
 
-      @media (@mobile) {
+      @media @mobile {
         width:auto;
         padding:0 20px;
       }
@@ -33,7 +33,7 @@
         display: flex;
         color: #707070;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: stretch;
         padding: 0 20px;
         @media (max-width: 1100px) {
           flex-wrap: wrap;
@@ -41,7 +41,7 @@
           align-items: center;
         }
   
-        @media (@mobile) {
+        @media @mobile {
           justify-content:center;
         }
   
@@ -57,7 +57,7 @@
             }
   
   
-          @media (@tablet) {
+          @media @tablet {
             max-width: 300px;
             margin-bottom: 50px;
           }
@@ -83,10 +83,6 @@
           margin: 0 20px;
           background: @lightGreen;
           color: white;
-  
-          @media (max-width: 1100px) {
-            order: 99;
-          }
         }
       }
     }
