@@ -17,6 +17,7 @@
       display: flex;
       padding: 0 50px;
       justify-content: center;
+      align-items: center;
 
       @media @tablet {
         flex-direction: column;
@@ -29,6 +30,16 @@
         padding:0;
       }
 
+      .arrows{
+        font-size:6rem;
+        cursor: copy;
+        color:@lightGreen;
+
+        &:hover{
+          color:@deepGreen;
+        }
+      }
+
   
   
       .feed-card {
@@ -38,6 +49,7 @@
         border-radius: 15px;
         border: 1px solid #f5f5f5;
         box-shadow: 8px 8px 8px 8px #f5f5f5;
+        //visibility: hidden;
   
         @media (max-width: 1100px) {
           max-width: 300px;
@@ -83,3 +95,10 @@
       }
     }
   }
+
+
+  .active{
+    visibility: visible;
+  }
+
+  

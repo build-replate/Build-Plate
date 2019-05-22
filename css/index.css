@@ -614,6 +614,7 @@ body h2 {
   display: flex;
   padding: 0 50px;
   justify-content: center;
+  align-items: center;
 }
 @media (max-width:800px) {
   .feedback-container .feed-holder {
@@ -627,6 +628,14 @@ body h2 {
     flex-direction: column;
     padding: 0;
   }
+}
+.feedback-container .feed-holder .arrows {
+  font-size: 6rem;
+  cursor: copy;
+  color: #89B774;
+}
+.feedback-container .feed-holder .arrows:hover {
+  color: #ff9900;
 }
 .feedback-container .feed-holder .feed-card {
   width: 250px;
@@ -673,6 +682,9 @@ body h2 {
 }
 .feedback-container .feed-holder .feed-card .feed-quote p {
   font-size: 20px;
+}
+.active {
+  visibility: visible;
 }
 .invest {
   display: flex;

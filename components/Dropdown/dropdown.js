@@ -26,7 +26,7 @@ class Dropdown{
     }
 }
 
-let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+//let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
 
 
 
