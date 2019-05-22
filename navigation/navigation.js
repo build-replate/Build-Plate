@@ -1,31 +1,32 @@
 
 
 
-// class Dropdown{
-//     constructor(element){
+class Dropdown{
+    constructor(element){
 
-//         this.element = element
+        this.element = element
 
-//         this.button = this.element.querySelector('.hamburger');
+        this.button = this.element.querySelector('.hamburger');
 
         
-//         this.content = document.querySelector('.top-section header nav');
+        this.content = document.querySelector('.menu');
         
-//         console.log(this.button)
+        console.log(this.button)
         
-//         this.button.addEventListener('click', () => {
-//             this.toggleMenu()
-//         });
-//     }
+        this.button.addEventListener('click', () => {
+            return this.toggleMenu()
+        });
+    }
 
-//     toggleMenu(){
-//         this.content.classList.toggle('menu-hidden');
-//         console.log(this.content)
-//         console.log('------------------------')
-//     }
-// }
+    toggleMenu(){
+        //this.content.style.display = this.content.style.display === 'none' ? 'block':'none';
+        console.log(this.content)
+        this.content.classList.toggle('hidden');
+        console.log('------------------------')
+    }
+}
 
-// let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
 
 
 

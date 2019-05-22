@@ -1,0 +1,1 @@
+TweenMax.to(".lost", 3, {left:600});

@@ -1,0 +1,74 @@
+.top-left {
+  header {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+    @media(@mobile){
+      justify-content: space-between;
+      padding-right:20px;
+      position:relative;
+    }
+
+    .hamburger {
+      display:none;
+
+      @media(@mobile){
+        //display: none;
+        display: block;
+      }
+      .ham {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      width: 90%;
+
+      @media(@mobile){
+        display: none;
+        
+
+        
+      }
+
+      a {
+        text-decoration: none;
+        color: @lightGray;
+        justify-content: space-around;
+        @media(@mobile){
+          //display: none;
+          //display: contents;
+          padding:10px;
+  
+          
+        }
+
+        &:hover {
+          color: @lightGreen;
+          font-weight: bold;
+        }
+      }
+    }
+
+    #logo {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
+
+.hidden{
+  display:block;
+  position:absolute;
+        left:0;
+        width:100%;
+        flex-direction:column;
+        margin-top:90px;
+        background:red;
+}

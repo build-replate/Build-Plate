@@ -1,32 +1,28 @@
 
 @import 'variables';
 @import 'mixins';
+
+
+//global files
 @import 'resets';
-
-
-
-body{
-    background:@lightGreen;
-    a{
-        text-decoration: none;
-    }
-    h2{
-        font-size:30px;
-    }
-    .container{
-        background:white;
-        margin:0 auto;
-        width:90%;
-        line-height:2em;
-        padding-bottom:50px;
-        font-family: 'Roboto Condensed', sans-serif;
-    
-    }
-}
+@import 'global';
 
 
 
 
-@import '../navigation/navigation.less';
-@import './about.less';
-@import './landing.less';
+
+
+//section files
+@import 'hero.less';
+@import 'navigation.less';
+@import 'opportunity.less';
+@import 'stats.less';
+@import 'better.less';
+@import 'feedback.less';
+@import 'invest.less';
+@import 'footer.less';
+
+
+
+//page files
+@import 'about.less';
