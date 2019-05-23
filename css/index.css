@@ -17,6 +17,17 @@
   border-radius: 5px;
   border: none;
 }
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
 .primary-color {
   color: #89B774;
 }
@@ -273,68 +284,70 @@ body h2 {
     width: 300px;
   }
 }
-.top-left header {
+.top-left .dropdown {
   display: flex;
   align-items: center;
   padding-left: 50px;
 }
 @media (max-width:500px) {
-  .top-left header {
+  .top-left .dropdown {
     justify-content: space-between;
     padding-right: 20px;
     position: relative;
   }
 }
-.top-left header .hamburger {
+.top-left .dropdown .hamburger {
   display: none;
 }
 @media (max-width:500px) {
-  .top-left header .hamburger {
+  .top-left .dropdown .hamburger {
     display: block;
   }
 }
-.top-left header .hamburger .ham {
+.top-left .dropdown .hamburger .ham {
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
 }
-.top-left header nav {
+.top-left .dropdown .menu {
   display: flex;
   justify-content: space-around;
   width: 90%;
+  z-index: 50;
 }
 @media (max-width:500px) {
-  .top-left header nav {
+  .top-left .dropdown .menu {
     display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 68px;
+    background: #ff9900;
+    color: white;
+  }
+  .top-left .dropdown .menu a {
+    color: white;
   }
 }
-.top-left header nav a {
+.top-left .dropdown .menu a {
   text-decoration: none;
   color: #ADADAD;
   justify-content: space-around;
 }
 @media (max-width:500px) {
-  .top-left header nav a {
+  .top-left .dropdown .menu a {
     padding: 10px;
+    color: white;
   }
 }
-.top-left header nav a:hover {
+.top-left .dropdown .menu a:hover {
   color: #89B774;
   font-weight: bold;
 }
-.top-left header #logo {
-  height: 50px;
-  width: 50px;
-}
-.hidden {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  flex-direction: column;
-  margin-top: 90px;
-  background: red;
+.top-left .dropdown .active {
+  display: flex;
 }
 .mid-section {
   width: 100%;
@@ -418,7 +431,6 @@ body h2 {
   font-size: 18px;
 }
 .mid-section .mid-bottom .card-container .mid-card {
-  margin: 0 20px;
   background: #89B774;
   color: white;
 }
@@ -453,21 +465,18 @@ body h2 {
 }
 @media (max-width:800px) {
   .mid-down .stats-container {
-    flex-wrap: wrap;
     padding: 0;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .mid-down .stats-container .stat1 {
     order: 3;
-    flex-grow: 3;
   }
   .mid-down .stats-container .stat2 {
-    order: 1;
-    flex-grow: 3;
+    order: 5;
   }
   .mid-down .stats-container .stat3 {
-    order: 3;
-    flex-grow: 3;
+    order: 1;
   }
 }
 @media (max-width:500px) {
@@ -481,17 +490,9 @@ body h2 {
   font-size: 30px;
   line-height: 2em;
   text-align: center;
-  padding: 20px;
 }
-@media (max-width:800px) {
-  .mid-down .stats-container .stats {
-    width: 300px;
-  }
-}
-@media (max-width:500px) {
-  .mid-down .stats-container .stats {
-    text-align: center;
-  }
+.mid-down .stats-container .stats img {
+  width: 95%;
 }
 .mid-down .stats-container .stats button {
   background: #ff9900;
@@ -502,10 +503,7 @@ body h2 {
   border: none;
 }
 @media (max-width:500px) {
-  .mid-down .stats-container .stats2 {
-    display: block;
-  }
-  .mid-down .stats-container .stats2 img {
+  .mid-down .stats-container img {
     width: 300px;
   }
 }
@@ -614,11 +612,10 @@ body h2 {
   display: flex;
   padding: 0 50px;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 @media (max-width:800px) {
   .feedback-container .feed-holder {
-    flex-direction: column;
     padding: 0;
     align-items: center;
   }
@@ -633,6 +630,7 @@ body h2 {
   font-size: 6rem;
   cursor: copy;
   color: #89B774;
+  margin: 50px 0px;
 }
 .feedback-container .feed-holder .arrows:hover {
   color: #ff9900;
@@ -669,6 +667,7 @@ body h2 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  object-fit: cover;
 }
 .feedback-container .feed-holder .feed-card .feed-top .credentials {
   margin-left: 30px;
@@ -683,8 +682,8 @@ body h2 {
 .feedback-container .feed-holder .feed-card .feed-quote p {
   font-size: 20px;
 }
-.active {
-  visibility: visible;
+.feedback-container .feed-holder .hidden {
+  display: none;
 }
 .invest {
   display: flex;
@@ -804,20 +803,9 @@ footer .nav-container .contact .cont button {
     padding: 10px;
   }
 }
-footer .copy {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-footer .copy img {
-  width: 50px;
-  height: 50px;
-}
 .about-container {
   height: 100%;
-  background: white;
+  background: #f7f7f7;
 }
 .about-container header {
   display: flex;
@@ -826,10 +814,7 @@ footer .copy img {
   align-items: center;
   box-shadow: 8px 8px 8px silver;
   margin-bottom: 50px;
-}
-.about-container header img {
-  width: 50px;
-  height: 50px;
+  background: white;
 }
 .about-container header nav {
   margin-right: 30px;
@@ -840,51 +825,109 @@ footer .copy img {
   color: #89B774;
   font-size: 1.3em;
 }
-.about-container .main {
-  display: flex;
-  align-items: stretch;
-  border-radius: 15px;
-  width: 90%;
-  margin: 0 auto;
+.about-container .story {
+  padding: 50px 100px;
 }
-@media (max-width: 850px) {
-  .about-container .main {
-    flex-wrap: wrap;
-    justify-content: center;
+@media (max-width:500px) {
+  .about-container .story {
+    padding: 50px 15px;
   }
 }
-.about-container .main .cont {
-  width: 50%;
+.about-container .story .story-heading h1 {
+  color: #ff9900;
+  margin-top: 100px;
 }
-@media (max-width: 850px) {
-  .about-container .main .cont {
-    width: 80%;
+.about-container .story .story-heading h2 {
+  color: #89B774;
+  margin: 50px 0;
+}
+@media (max-width:500px) {
+  .about-container .story .storyline {
+    flex-direction: column;
   }
 }
-.about-container .main .about-left .img-container img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+.about-container .story .storyline .storyline-img img {
+  width: 200px;
 }
-.about-container .main .about-right {
-  background: white;
-  padding: 40px;
-  border-radius: 15px;
+@media (max-width: 700px) {
+  .about-container .story .storyline .storyline-img img {
+    width: 95%;
+  }
 }
-.about-container .main .about-right h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.about-container .main .about-right p {
-  font-size: 1.5em;
-  line-height: 1.4;
-  margin-bottom: 30px;
+.about-container .story .storyline .storyline-words p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin: 30px 0;
+  padding: 0 30px;
   color: #808080;
 }
-.about-container .main .about-right p .indent {
-  margin-left: 30px;
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
-.lost {
-  background: red;
-  position: absolute;
+.normal {
+  display: flex;
+}
+.words {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin: 30px 0;
+  padding: 0 30px;
+  color: #808080;
+}
+.team {
+  padding: 30px 0;
+}
+.team .team-heading {
+  font-size: 30px;
+  text-align: center;
+  margin: 3rem 0 6rem 0;
+}
+.team .team-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.team .team-container .team-card {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding: 0 20px;
+}
+@media (max-width:800px) {
+  .team .team-container .team-card {
+    width: 50%;
+  }
+}
+@media (max-width:500px) {
+  .team .team-container .team-card {
+    width: 100%;
+  }
+}
+.team .team-container .team-card img {
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.team .team-container .team-card .name {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: #ADADAD;
+}
+.team .team-container .team-card .position {
+  line-height: 1.2rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+.team .team-container .team-card .position .nickname {
+  color: #89B774;
+}
+.team .team-container .team-card .position .cohort {
+  color: #ff9900;
+}
+.team .team-container .team-card .position .study {
+  color: #888C04;
+  font-weight: bold;
 }

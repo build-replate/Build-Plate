@@ -1,62 +1,79 @@
-class LightBox{
-    constructor(element){
-        this.element = element;
-         this.cards = document.querySelectorAll('.feed-card');
-         this.previousFeed = document.querySelector('.left-arrow');
-         this.nextFeed = document.querySelector('.right-arrow');
+class Carousel {
+    constructor(element) {
+      this.element = element;
+      this.allImages = document.querySelectorAll(".feed-card");
+      this.previousFeed = document.querySelector(".left-arrow");
+      this.nextFeed = document.querySelector(".right-arrow");
+
+  
+      this.previousImage();
+      this.nextImage();
 
 
-         this.count = 0;
-         this.allCards = this.cards.length;
-         this.current = this.cards[this.count];
 
-
-
-        this.previousFeed.addEventListener('click', () => {
-            this.moveFeed(-1);
-        });
-
-
-        this.nextFeed.addEventListener('click', () => {
-            this.moveFeed(1);
-        });
+      this.count = 0;
 
     }
+  
+    nextImage() {
+      this.nextFeed.addEventListener("click", () => {
 
-    moveFeed(direction){
-        //remove active class from other boxes
-        this.cards.forEach( card =>{
-            card.classList.remove('active');
-        });
+        this.toggleImage(1);
 
-        //check for edage then update count
+
         
-
-        if(this.count === 0 && direction === -1){
-            this.count = this.allCards - 1;
-        }else if(this.count === this.allCards - 1  && direction === 1){
-            this.count = 0;
-            }else{
-
-                this.count = (this.count + direction);
-            }
-
-            //get next card and add class
-            console.log(this.count)
-            this.cards[this.count].classList.add('active');
-            console.log(this.cards[this.count]);
+      });
 
     }
-    
-}
+  
+    previousImage() {
+      this.previousFeed.addEventListener("click", () => {
 
-let lightB = document.querySelectorAll('.feed-holder');
-lightB.forEach((element) =>{
-     new LightBox(element);
-});
+          this.toggleImage(-1);
+      });
+    }
 
-console.log('Im the right');
 
-// document.querySelector('.left-arrow').addEventListener('click', () => {
-//     console.log('Im the right');
-// });;
+
+
+  
+
+
+
+
+
+    toggleImage(direction){
+      // On "next" click... if count = total images then take count back to the beginning "0"
+      if (this.count === (box.length -1) && direction === 1){
+        this.count = 0;
+      }else if(this.count === 0 && direction === -1){
+        this.count = box.length - 1;
+      }else{
+        this.count = this.count + direction ;
+      }
+
+
+    box.forEach(card => card.classList.add("hidden"));
+
+    box[this.count].classList.toggle("hidden");
+    }
+  }
+  
+  const feedback = document.querySelector(".feed-holder");
+  const box = feedback.querySelectorAll(".feed-card");
+  
+  // displays the first card
+  document.querySelectorAll(".feed-card").forEach( card =>{
+    if(card === box[0]){
+
+    }else{
+      card.classList.add("hidden");
+    }
+  })
+
+  box.forEach(image => new Carousel(image));
+
+
+
+  
+  

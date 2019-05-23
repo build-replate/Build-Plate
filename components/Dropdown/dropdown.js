@@ -6,27 +6,23 @@ class Dropdown{
 
         this.element = element
 
-        this.button = this.element.querySelector('.hamburger');
+        this.button = document.querySelector('.hamburger');
 
         
         this.content = document.querySelector('.menu');
         
-        console.log(this.button)
         
         this.button.addEventListener('click', () => {
-            return this.toggleMenu()
-        });
+            this.toggleMenu()
+        })
     }
 
     toggleMenu(){
-        //this.content.style.display = this.content.style.display === 'none' ? 'block':'none';
-        console.log(this.content)
-        this.content.classList.toggle('hidden');
-        console.log('------------------------')
+        this.content.classList.toggle('active');
     }
 }
 
-//let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
 
 
 

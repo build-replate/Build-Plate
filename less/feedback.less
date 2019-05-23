@@ -17,10 +17,10 @@
       display: flex;
       padding: 0 50px;
       justify-content: center;
-      align-items: center;
+      align-items: stretch;
 
       @media @tablet {
-        flex-direction: column;
+        
         padding:0;
         align-items: center;
       }
@@ -34,6 +34,7 @@
         font-size:6rem;
         cursor: copy;
         color:@lightGreen;
+        margin:50px 0px;
 
         &:hover{
           color:@deepGreen;
@@ -73,6 +74,7 @@
             width: 80px;
             height: 80px;
             border-radius: 50%;
+            object-fit: cover;
           }
   
           .credentials {
@@ -93,12 +95,11 @@
           }
         }
       }
+      .hidden{
+        display: none;
+      }
     }
   }
 
-
-  .active{
-    visibility: visible;
-  }
 
   
