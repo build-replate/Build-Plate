@@ -329,6 +329,8 @@ body h2 {
   }
   .top-left .dropdown .menu a {
     color: white;
+    transition: all 0.2s linear;
+    scroll-behavior: smooth;
   }
 }
 .top-left .dropdown .menu a {
