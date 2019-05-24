@@ -329,8 +329,6 @@ body h2 {
   }
   .top-left .dropdown .menu a {
     color: white;
-    transition: all 0.2s linear;
-    scroll-behavior: smooth;
   }
 }
 .top-left .dropdown .menu a {
@@ -478,7 +476,7 @@ body h2 {
   .mid-down .stats-container {
     padding: 0;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
   .mid-down .stats-container .stat1 {
     order: 3;
