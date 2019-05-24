@@ -51,14 +51,12 @@
       }
 
       .steps{
-        display:flex;
-        justify-content: space-around;
+        .flex(row, space-around, baseline);
         width:80%;
         margin:0 auto;
 
         @media @mobile {
           flex-direction:column;
-         // justify-content: center;
         }
       }
 

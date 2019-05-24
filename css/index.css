@@ -199,6 +199,9 @@ body h2 {
 .top-section {
   width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
   margin-bottom: 150px;
 }
 @media (max-width:800px) {
@@ -297,6 +300,8 @@ body h2 {
 }
 .top-left .dropdown {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   padding-left: 50px;
 }
@@ -324,7 +329,9 @@ body h2 {
 }
 .top-left .dropdown .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   width: 90%;
   z-index: 5;
 }
@@ -390,15 +397,15 @@ body h2 {
 }
 .mid-section .mid-bottom .card-container {
   display: flex;
-  color: #707070;
+  flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
+  color: #707070;
   padding: 0 20px;
 }
 @media (max-width: 1100px) {
   .mid-section .mid-bottom .card-container {
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
   }
 }
@@ -470,7 +477,9 @@ body h2 {
 }
 .mid-down .stats-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 0 100px;
 }
 @media (max-width: 1100px) {
@@ -570,7 +579,9 @@ body h2 {
 }
 .better .better-bottom .steps {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
   width: 80%;
   margin: 0 auto;
 }
@@ -604,9 +615,10 @@ body h2 {
 }
 .feedback-container .feed-holder {
   display: flex;
-  padding: 0 50px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding: 0 50px;
 }
 @media (max-width:800px) {
   .feedback-container .feed-holder {
@@ -662,6 +674,9 @@ body h2 {
 }
 .feedback-container .feed-holder .feed-card .feed-top {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 20px;
 }
 .feedback-container .feed-holder .feed-card .feed-top img {
@@ -688,30 +703,16 @@ body h2 {
 }
 .invest {
   display: flex;
-  text-align: center;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 900px;
+  text-align: center;
+  width: 70%;
   height: 300px;
   box-shadow: 8px 8px 8px 8px #f5f5f5;
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 150px;
-}
-@media (max-width: 1050px) {
-  .invest {
-    width: 600px;
-  }
-}
-@media (max-width:800px) {
-  .invest {
-    width: 400px;
-  }
-}
-@media (max-width:500px) {
-  .invest {
-    width: 90%;
-  }
 }
 .invest button {
   background: #89B774;
@@ -725,7 +726,9 @@ body h2 {
 footer .nav-container {
   width: inherit;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   padding: "20px";
   margin: 0 auto;
   margin-bottom: 50px;
@@ -745,7 +748,9 @@ footer .nav-container {
 }
 footer .nav-container .footer-nav {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
 }
 footer .nav-container .footer-nav .nav-col {
   margin: 0 40px;

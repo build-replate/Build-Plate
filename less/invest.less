@@ -1,28 +1,13 @@
 .invest {
-    display: flex;
+  .flex(row, center, center);
+    
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 900px;
+    width:70%;
     height: 300px;
     box-shadow: 8px 8px 8px 8px #f5f5f5;
     margin: 0 auto;
     border-radius: 15px;
     .average-bottom-space();
-  
-    @media (max-width: 1050px) {
-      width: 600px;
-    }
-
-    
-  
-    @media @tablet {
-      width: 400px;
-    }
-
-    @media @mobile {
-      width:90%;
-    }
   
     button {
       .btn(@lightGreen, white);

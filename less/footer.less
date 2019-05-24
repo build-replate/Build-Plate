@@ -1,10 +1,9 @@
 footer {
     .nav-container {
       width: inherit;
-      display: flex;
-      justify-content: space-between;
+      .flex(row, space-around, center);
+
       padding:"20px";
-      // width: 70%;
       margin: 0 auto;
       margin-bottom: 50px;
       margin-left: 50px;
@@ -22,8 +21,7 @@ footer {
       }
 
       .footer-nav{
-        display: flex;
-        justify-content: space-evenly;
+        .flex(row, space-around, baseline);
         .nav-col {
           margin:0 40px;
 
@@ -62,10 +60,7 @@ footer {
         }
   
         .cont {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+          .flex(column, center, center);
           height: 300px;
           img{
             width:80px;

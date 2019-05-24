@@ -14,10 +14,9 @@
     }
   
     .feed-holder {
-      display: flex;
+      .flex(row, center, center);
+     
       padding: 0 50px;
-      justify-content: center;
-      align-items: center;
 
       @media @tablet {
         
@@ -76,7 +75,8 @@
         
   
         .feed-top {
-          display: flex;
+          .flex(row, flex-start, center);
+          
           margin-bottom: 20px;
           img {
             width: 80px;

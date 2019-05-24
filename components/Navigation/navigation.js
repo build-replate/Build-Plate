@@ -18,7 +18,7 @@ navElements.nav.map(nav =>{
     newname.textContent = nav.name;
     newname.setAttribute('href', nav.href);
 
-    document.querySelector('.dropdown .menu').appendChild(newname);
+    let exe = document.querySelector('.dropdown .menu').appendChild(newname);
 
 });
 
