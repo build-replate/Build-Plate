@@ -14,6 +14,7 @@ class Carousel {
       this.count = 0;
 
     }
+
   
     nextImage() {
       this.nextFeed.addEventListener("click", () => {
@@ -41,6 +42,7 @@ class Carousel {
       // On "next" click... if count = total images then take count back to the beginning "0"
       if (this.count === (this.allImages.length -1) && direction === 1){
         this.count = 0;
+      // On "previous" click... if count = 0 then take ahead to the last image
       }else if(this.count === 0 && direction === -1){
         this.count = this.allImages.length - 1;
       }else{
@@ -48,15 +50,23 @@ class Carousel {
       }
 
 
+      // remove visibility / make hidden all images
       this.allImages.forEach(card => card.classList.add("hidden"));
 
+      // make visible target image
       this.allImages[this.count].classList.toggle("hidden");
     }
   }
   
   const feedback = document.querySelector(".feed-holder");
-  const box = feedback.querySelectorAll(".feed-card");
-  
+
+
+  //Get all feedback
+  let box = feedback.querySelectorAll(".feed-card");
+  //console.log(JSON.stringify(carouselContent));
+
+
+  //Hide all feedback cards execpt the 1st one
   document.querySelectorAll(".feed-card").forEach( card =>{
     if(card === box[0]){
 
@@ -65,7 +75,9 @@ class Carousel {
     }
   })
 
-  box.forEach(image => new Carousel(image));
+//Create a new instance of the feedback boxes using higher array 
+  box = Array.from(box).map(image => new Carousel(image));
+
 
 
 

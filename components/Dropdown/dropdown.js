@@ -19,6 +19,7 @@ class Dropdown{
 
     toggleMenu(){
         this.content.classList.toggle('active');
+        document.querySelector('.shadow').style.display = 'block';
     }
 }
 
